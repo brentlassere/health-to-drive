@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health to Drive</title>
+  <style>
+    :root { --fg: #1f2328; --muted: #57606a; --bg: #ffffff; --accent: #0969da; --rule: #d0d7de; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg: #e6edf3; --muted: #9da7b3; --bg: #0d1117; --accent: #58a6ff; --rule: #30363d; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 42rem; margin: 0 auto; padding: 3rem 16px 4rem; }
+    h1 { font-size: 2rem; margin: 0 0 .25rem; }
+    .sub { color: var(--muted); margin: 0 0 2rem; }
+    h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
+    a { color: var(--accent); }
+    ul { padding-left: 1.2rem; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .95rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Health to Drive</h1>
+  <p class="sub">A personal script that copies one person's fitness data into their own Google Sheet.</p>
+
+  <h2>What it does</h2>
+  <p>Health to Drive is a single-user Google Apps Script written by Brent Lassere for personal use.
+     Once a day it reads activity, heart-rate and sleep data from the owner's own Fitbit / Pixel Watch
+     account through the Google Health API and writes a daily summary into a Google Sheet in the
+     owner's Google Drive.</p>
+
+  <h2>Who uses it</h2>
+  <p>Only the author. It is not offered to other users, has no sign-up, and is not a commercial product.</p>
+
+  <h2>Data handled</h2>
+  <ul>
+    <li>Daily step counts, calories, heart-rate minimum / maximum / average and resting heart rate</li>
+    <li>Sleep sessions and sleep stages</li>
+    <li>Workout sessions (type, duration, calories, heart-rate zones)</li>
+  </ul>
+  <p>Everything is stored only in the owner's Google account. See the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    Contact: brentlassere@gmail.com &middot; <a href="privacy.html">Privacy policy</a>
+  </footer>
+</main>
+</body>
+</html>
